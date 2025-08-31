@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+    <p id="description"> General Survey</p>
+  </head>
+  
+  <body>
+  <header><h1 id="title">Survey</h1></header>
+  <form method="POST" action="" id="survey-form">
+    <fieldset>
+      <legend>Details</legend>
+      <label id="name-label" for="name"> Enter Name:</label>
+      <input required id="name" type="text" name="name" placeholder="John Doe" />
+      </br>
+      <label id="email-label" for="email"> Enter Email:</label>
+      <input required id="email" type="email" name="email" placeholder="example@gmail.com" />
+      </br>
+      <label id="number-label" for="number"> Enter Number:</label>
+      <input required id="number" type="number" name="number" min="100000000" max="999999999" size="15" placeholder ="123456789"/>
+      </fieldset>
+      <fieldset>
+      <legend>Acceptance</legend>
+      <label for="acceptance">Do you accept with our conditions?</label>
+      <select id="dropdown" name="acceptance">
+        <option selected value="Yes">Yes</option>
+        <option value="NO">No</option>
+        </select>
+      </fieldset>
+      <fieldset>
+      <legend >Are you satisfied?</legend>
+        <label for=radio-yes>Yes</label>
+        <input id="radio-yes" type="radio" name="satisfaction" value="yes"/>
+        <label for="radio-no">No</label>
+        <input id="radio-no" type="radio" name="satisfaction" value="no"/>
+       </fieldset>
+       <fieldset>
+         <legend>What do you drive?</legend>
+       <label for="car">Car</label>
+          <input type="checkbox" id="car" name="car" value="car" />
+       <label for="bike">bike</label>
+          <input type="checkbox" id="bike" name="bike" value="bike" />
+        </fieldset>
+       <fieldset>
+         <label for="comments">Any comments?</label>
+         <textarea id="comments" name="comments" cols="30" rows="10"></textarea>
+
+       </fieldset>
+
+       <button type="submit" id="submit"> submit </button>
+
+
+
+
+
+
+      
+
+  </form>
+  </body>
+</html>
